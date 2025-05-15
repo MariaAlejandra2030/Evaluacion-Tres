@@ -1,0 +1,61 @@
+.acerca {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.acerca__fondo {
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.acerca__contenido {
+  flex: 1;
+  margin-left: 250px;
+  padding: 2rem;
+  z-index: 1;
+  position: relative;
+}
+
+.acerca__main {
+  background-image: linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 19%)), url(/institucional.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  margin: 60px;
+  backdrop-filter: blur(10px);
+}
+
+
+.acerca__titulo {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: black;
+}
+
+.acerca__seccion {
+  margin-bottom: 1.5rem;
+}
+
+.acerca__seccion h3 {
+  font-size: 1.3rem;
+  color: #2a2a2a;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #b392ac;
+  padding-left: 0.5rem;
+}
+
+.acerca__seccion p {
+  line-height: 1.6;
+}

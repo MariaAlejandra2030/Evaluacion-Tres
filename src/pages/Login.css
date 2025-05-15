@@ -1,0 +1,87 @@
+/* Estilos globales mínimos si los necesitas en App.css u otro global */
+/* NO se necesita tocar html/body directamente aquí */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Este contenedor usa el 100% de la altura visible del viewport */
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/login.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.form {
+    background-color: rgb(0 0 0 / 35%);
+    display: block;
+    padding: 1.5rem;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 2.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px #fcb7af;
+}
+
+.form-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.input-container {
+  margin-bottom: 1rem;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.875rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.submit {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  background-color: #4F46E5;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit:hover {
+  background-color: #3730a3;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #6B7280;
+}
+
+label.signup_tog
+{
+  color: white;
+  text-decoration: underline;
+  font-weight: 700;
+}
