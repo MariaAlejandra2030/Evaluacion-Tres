@@ -1,6 +1,13 @@
 import "./Login.css";
+import { useNavigate } from "react-router-dom";
 
 function Registrate() {
+  const redireccion = useNavigate();
+
+  function PaginaRegistrate() {
+    redireccion("/Login");
+  }
+
   return (
     <main className="login-container">
       <form className="form">
@@ -17,11 +24,13 @@ function Registrate() {
         <div className="input-container">
           <input type="password" placeholder="Correo" />
         </div>
-        <button type="submit" className="submit">
+        <button onClick={PaginaRegistrate} type="submit" className="submit">
           Registrarse
         </button>
         <p className="signup-link">
-          <a href="#">¿Ya tienes cuenta?</a>
+          <label onClick={PaginaRegistrate} className="signup_tog">
+            ¿Ya tienes cuenta?
+          </label>
         </p>
       </form>
     </main>

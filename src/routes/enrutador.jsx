@@ -8,7 +8,7 @@ import Servicios from '../pages/Servicios'
 
 export let enrutador = [
     {
-        path: '/',
+        path: '/Login',
         element: <Login />
     },
     {
@@ -16,7 +16,7 @@ export let enrutador = [
         element: <Registrate />
     },
     {
-        path: '/Home',
+        path: '/',
         element: <Home />
     },
     {

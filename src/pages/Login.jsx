@@ -2,18 +2,17 @@ import "./Login.css";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
-
-   const redireccion = useNavigate();
+  const redireccion = useNavigate();
 
   function PaginaRegistrate() {
     redireccion("/Registrate");
   }
 
+  function IniciarSeccion() {
+    redireccion("/");
+  }
 
   return (
-    
-
-    
     <main className="login-container">
       <form className="form">
         <p className="form-title">Inicia sesión</p>
@@ -23,14 +22,13 @@ function Login() {
         <div className="input-container">
           <input type="password" placeholder="Contraseña" />
         </div>
-        <button type="submit" className="submit">
+        <button onClick={IniciarSeccion} type="submit" className="submit">
           Iniciar sesión
         </button>
         <p className="signup-link">
           <label onClick={PaginaRegistrate} className="signup_tog">
-              ¿No tienes cuenta?
-            </label>
-            
+            ¿No tienes cuenta?
+          </label>
         </p>
       </form>
     </main>

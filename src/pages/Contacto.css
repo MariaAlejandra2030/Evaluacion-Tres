@@ -42,7 +42,7 @@
 .contacto__titulo {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #2a8dd8;
+  color: black;
   text-align: center;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .formulario button {
-  background-color: #2a8dd8;
+  background-color: #e38d80;
   color: white;
   padding: 0.8rem;
   border: none;
@@ -69,7 +69,7 @@
 }
 
 .formulario button:hover {
-  background-color: #2374b5;
+  background-color: #cf7162;
 }
 
 .contacto__info {
